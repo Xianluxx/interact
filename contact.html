@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="top-nav">
+    </label>
+    <div class="nav-links" id="navLinks">
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="product.html">PRODUCTS</a></li> 
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html">CART</a></li>
+        <li><a href="check.html">CHECK OUT</a></li>
+      </ul>
+    </div>
+    </section>
+
+
+    <main class="form-container">
+        <h1>Contact Us</h1>
+        <div class="success-message"></div>
+        <form id="contact-form">
+          <div>
+            <label>
+              Name:
+              <input type="text" id="name" />
+            </label>
+            <div class="error" id="name-Failed">Required</div>
+          </div>
+          <div>
+            <label>
+              Subject:
+              <input type="text" id="subject" />
+            </label>
+            <div class="error" id="subject-Failed">
+              Must have a value with a minimum length of 10
+            </div>
+          </div>
+          <div>
+            <label>
+              Email:
+              <input type="email" id="email" />
+            </label>
+            <div class="error" id="email-Failed">
+              Must have a value and be formatted like an email address
+            </div>
+          </div>
+          <div>
+            <label>
+              Address:
+              <input type="text" id="address" />
+            </label>
+            <div class="error" id="address-Failed">
+              Must have a value with a minimum length of 25
+            </div>
+          </div>
+          <div class="form-actions">
+            <button id="submit-button">Submit</button>
+          </div>
+        </form>
+      </main>
+      <script src="/js/form.js"></script>
+
+</body>
